@@ -1,0 +1,19 @@
+{
+  "name": "tsbase",
+  "version": "1.0.0",
+  "description": "TS Base App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winkingcatstudios/tsBase.git"
+  },
+  "author": "Dan Kercher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winkingcatstudios/tsBase/issues"
+  },
+  "homepage": "https://github.com/winkingcatstudios/tsBase#readme"
+}
