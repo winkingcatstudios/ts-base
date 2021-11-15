@@ -6,7 +6,8 @@
 var person = {
     name: 'Dan',
     age: 32,
-    hobbies: ['Cooking', "Board Games"]
+    hobbies: ['Cooking', "Board Games"],
+    role: [2, 'author']
 };
 var favoriteActivities;
 favoriteActivities = ['Cooking'];

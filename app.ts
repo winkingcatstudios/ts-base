@@ -3,11 +3,19 @@
 //     name: string;
 //     age: number;
 // } = {
-const person = {
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    role: [number, string]; // Tuple
+} = {
     name: 'Dan',
     age: 32,
-    hobbies: ['Cooking', "Board Games"]
+    hobbies: ['Cooking', "Board Games"],
+    role: [2, 'author']
 };
+
+person.role.push('admin');  // push is an exception that works on Tuples 
 
 let favoriteActivities: string[];
 favoriteActivities = ['Cooking'];
