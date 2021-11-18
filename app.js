@@ -1,24 +1,16 @@
-// // can specify return type, but best practice is to let ts use type inference
-// function add(n1: number, n2: number): number {
-//     return n1 + n2;
-// }
-function add(n1, n2) {
-    return n1 + n2;
+// unknown is better than any is you really can't know type. 
+// still better to use union if you can: string | number if could be multiple types
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Dan';
+// eror below, would not be an error is userInput was any
+// userName = userInput;
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-function printResult(num) {
-    console.log('Result: ' + num);
+// intended to never return anything, makes it clear when reading code
+function generateError(message, code) {
+    throw { message: message, erroCode: code };
 }
-printResult(add(5, 12));
-// notice capital on Function
-// let combineValues: Function;
-// function type with specified params and return type
-var combineValues;
-combineValues = add;
-console.log(combineValues(8, 8));
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-addAndHandle(10, 20, function (result) {
-    console.log(result);
-});
+generateError('An error occured', 500);
