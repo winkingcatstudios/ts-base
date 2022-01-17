@@ -1,5 +1,5 @@
 // using ts watch mode with tsc app.ts -w
-const user = 'Dan';
+const user = 'Dan'; 
 
 console.log(user);
 
